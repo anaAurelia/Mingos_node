@@ -4,7 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  
+  <!-- LOGO Y TÍTULO DE TODAS LAS INTERFACES-->
+  <link rel="shortcut icon" href="images/logo.png" type=""> 
+  <title>Mingos Pizzas</title>
 
   <!--CDN DE BOOTSTRAP-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -51,28 +54,29 @@
     </div>
   </nav>
 
-  <div class="container-fluid login p-2 mt-5">
-    <h1 class="text-center mt-4">Inicio sesión</h1>
-    <div class="container mt-3">
-      <form action="/action_page.php" class="was-validated">
-        <div class="mb-3 ms-lg-5 mt-3">
-          <label for="uname" class="form-label">Correo electrónico:</label>
-          <input type="text" class="form-control" id="uname" placeholder="Ingrese su correo electrónico" name="uname" required>
-          <div class="valid-feedback">Valid.</div>
-          <div class="invalid-feedback">Please fill out this field.</div>
+  <div class="login">
+    <main class="form-signin w-100 m-auto">
+      <form>
+        <h1 class="h3 mb-3 fw-normal text-center">Inicio de sesión</h1>
+
+        <div class="form-floating">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Correo electrónico</label>
         </div>
-        <div class="mb-3 ms-5">
-          <label for="pwd" class="form-label">Contraseña:</label>
-          <input type="password" class="form-control" id="pwd" placeholder="Ingrese su contraseña" name="pswd" required>
-          <div class="valid-feedback">Valid.</div>
-          <div class="invalid-feedback">Please fill out this field.</div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Contraseña</label>
         </div>
-        <div class="text-center">
-        <button type="submit" class="btn btn-primary">Acceder</button>
-      </div>
+
+        <div class="checkbox mb-3">
+          <p>Crea una cuenta nueva. <a class="link" href="registro.html"> Regístrate</a></p>
+          </p>
+        </div>
+        <button class="w-100 btn btn-login btn-primary" type="submit">Ingresar</button>
       </form>
-    </div>
+    </main>
   </div>
+
 
   <footer>
     <!--<div class="row">
@@ -80,9 +84,9 @@
     </div>
   </footer> -->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
