@@ -11,22 +11,20 @@ body{
 
 /*SECCIÓN DEL LOGIN*/
 .login{
-    /*Centrar los elementos que contiene el div del login*/
-    display: flex;
-    align-items: center;
-    
-    /*Alineando los elementos sobre la pantalla */
-    padding-top: 120px;
+    display: flex; 
+    align-items: center; /*Propiedad especifica la alineación predeterminada de los elementos dentro del contenedor flexible.*/
+
+    padding-top: 120px; /*Alineando los elementos sobre la pantalla*/
     padding-bottom: 40px;
 }
 
 .form-signin {
     max-width: 330px;
-    padding: 15px;
+    padding: 15px; /*El relleno se utiliza para crear espacio alrededor del contenido de un elemento, dentro de los bordes definidos.*/
   }
   
   .form-signin .form-floating:focus-within {
-    z-index: 2;
+    z-index: 2; /*Indica el orden de un elemento posicionado y sus descendientes*/
   }
   
   .form-signin input[type="email"] {
