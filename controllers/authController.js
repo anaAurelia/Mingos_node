@@ -22,3 +22,30 @@ exports.register = async (req, res) => {
 
 
 }
+
+exports.login = async (req, res)=>{
+   try{
+    const user = req.body.user
+    const pass = req.body.pass
+    if(!user || !pass){
+        res.render('login',{
+            alert:true,
+            alertTitle: "Advertencia",
+            alertMessage: "Ingrese un usuario y contraseña",
+            alertIcon: 'info',
+            showConfirmButton: true,
+            timer: false,
+            ruta:'login'
+        })
+    }else{
+       conexion.query('SELECT * FROM users WHERE user = ?', [user], (error, results)=>{
+        if(results.length == 0 ||!(await bcryptjs.compare(pass, results[0].pass)) ){
+            
+        }
+        
+    }) 
+    }
+   }catch (error){
+
+   } 
+}
