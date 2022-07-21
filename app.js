@@ -22,7 +22,7 @@ dotenv.config({path: '/env/.env'})
 app.use('/', require('./routes/router'))
 
 /*En que puerto va escuchar nuestro servidor*/
-app.listen(3000, ()=>{
-    console.log('SERVER UP runnung in http://localhost:3000')
+app.listen(3001, ()=>{
+    console.log('SERVER UP runnung in http://localhost:3001')
 })
 
