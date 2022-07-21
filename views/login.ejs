@@ -1,1 +1,97 @@
-<h1>VISTA LOGIN</h1>
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- LOGO Y TÍTULO DE TODAS LAS INTERFACES-->
+  <link rel="shortcut icon" href="images/logo.png" type="">
+  <title>Mingos Pizzas</title>
+
+  <!--CDN DE BOOTSTRAP-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!--LINK DE LAS FUENTES QUE UTILIZAMOS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <!--HOJA DE ESTILOS-->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!--NAV PRINCIPAL DE LA PÁGINA-->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <img src="images/logo.png" alt="" width="50" class="me-3 ms-2"><a class="navbar-brand" href="#">Mingos Pizzas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+        </ul>
+        <!--"Content-end" para alinearlo al final de la página-->
+        <ul class="navbar-nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pizzas</a>
+          </li>
+          <li class="nanv-item">
+            <a class="nav-link" href="#">Promociones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Arma tu pizza</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Productos extras</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="login">
+    <main class="form-signin w-100 m-auto">
+      <form>
+        <h1 class="h3 mb-4 fw-normal text-center">Inicio de sesión</h1>
+
+        <div class="form-floating">
+          <input type="text" class="form-control" id="user" name="user" placeholder="name@example.com">
+          <label for="floatingInput">Correo electrónico</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="pass" name="pass" placeholder="Password">
+          <label for="floatingPassword">Contraseña</label>
+        </div>
+
+        <div class="checkbox mb-3 mt-4">
+          <p class="text-center">Crea una cuenta nueva. <a class="link" href="registro.html"> Regístrate</a></p>
+          </p>
+        </div>
+        <div class="text-center">
+        <button class="w-75 btn btn-login btn-primary" type="submit">Ingresar</button>
+      </div>
+      </form>
+    </main>
+  </div>
+
+<!--
+  <footer class="bg-dark">
+    <div class="row">
+      <div class="col-md-3">.col-sm-3</div>
+      <div class="col-md-3">.col-sm-3</div>
+      <div class="col-md-3">.col-sm-3</div>
+      <div class="col-md-3">.col-sm-3</div>
+    </div>
+  </footer>-->
+
+    <script src="js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+/*ESTILO DEL TABLERO*/
+body{
+    font-family: 'Poppins', sans-serif;  
+}
+
+/*NAV (BARRA DE MENÚ)*/
+.navbar-brand{
+    font-weight: bold;
+}
+
+
+/*SECCIÓN DEL LOGIN*/
+.login{
+    display: flex; 
+    align-items: center; /*Propiedad especifica la alineación predeterminada de los elementos dentro del contenedor flexible.*/
+
+    padding-top: 120px; /*Alineando los elementos sobre la pantalla*/
+    padding-bottom: 40px;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px; /*El relleno se utiliza para crear espacio alrededor del contenido de un elemento, dentro de los bordes definidos.*/
+  }
+  
+  .form-signin .form-floating:focus-within {
+    z-index: 2; /*Indica el orden de un elemento posicionado y sus descendientes*/
+  }
+  
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .btn-login{
+    background-color: #E37E1E;
+    border: none;
+  }
+  
+  .btn-login:hover {
+    background-color: black; /* Green */
+    color: white;
+  }
