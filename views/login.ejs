@@ -70,7 +70,7 @@
         </div>
 
         <div class="checkbox mb-3 mt-4">
-          <p class="text-center">Crea una cuenta nueva. <a class="link" href="registro.html"> Regístrate</a></p>
+          <p class="text-center">Crea una cuenta nueva. <a class="link" href="/register"> Regístrate</a></p>
           </p>
         </div>
         <div class="text-center">
@@ -94,17 +94,17 @@
 </body>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   
-<% if (typeof alert != "undefined")  { %>
+<% if(alert) { %>
   <script>
-  Swal.fire({
-    title:'<%= alertTitle %>',
-    text:'<%= alertMessage %>',
-    icon:'<%= alertIcon %>',
-    showConfirmButton: <%= showConfirmButton %>,
-    timer: <%= timer %>
-  }).then(()=>{
-    window.location='/<%= ruta %>'
-  })
+    Swal.fire({
+      title: '<%= alertTitle %>',
+      text:'<%= alertMessage %>',
+      icon:'<%= alertIcon %>',
+      showConfirmButton: <%= showConfirmButton %>,
+      timer: <%= timer %>
+    }).then(()=>{
+      window.location = '/<%= ruta %>'
+    })
   </script>
 <% } %>
 </div>
