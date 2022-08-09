@@ -47,19 +47,7 @@ exports.login = async (req, res) => {
                         ruta: 'login'
                     })
                 } else {
-                    //iniccio de sesión OK
-                    const id = results[0].id
-                    const token = jwt.sign({ id: id }, process.env.JWT_SECRETO, {
-                        expresIn: process.env.JWT_TIEMPO_EXPIRA
-                    })
-                    //generamos el token SIN fecha de expiracion
-                    console.log("TOKEN: " + token + "para el usuario: " + user)
-
-                    const cookiesOptions = {
-                        expires: new Date(Date.now() + process.env.JWT_COOKIE_EXPIRES * 24 * 60 * 60 * 1000),
-                        httpOnly: true
-                    }
-                    res.cookie('jwt', token, cookiesOptions)
+                    //inicio de sesión OK
                     res.render('login', {
                         alert: true,
                         alertTitle: "Conexión exitosa",
@@ -67,7 +55,7 @@ exports.login = async (req, res) => {
                         alertIcon: 'sucess',
                         showConfirmButton: false,
                         timer: 800,
-                        ruta: ''
+                        ruta: 'index'
                     })
                 }
             })
